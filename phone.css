@@ -1,0 +1,129 @@
+/* Utilities/Def var */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --subhead: 1.5rem;
+}
+
+/* Navigation bar section */
+
+#navbar {
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#navbar ul li {
+    padding-left: 7.5px;
+    font-size: small;
+    width: max-content;
+    padding-right: 7.5px;
+}
+
+#navbar ul {
+    margin: 2px;
+}
+
+/* Home section */
+
+.btn {
+    margin-bottom: 30px;
+    top: 66px;
+    width:136px;
+    height: 8%;
+    font-size: 1rem;
+}
+
+#home::before {
+    height: 645px;
+}
+
+#home h1 {
+    font-size: 2.3rem;
+    bottom: 20px;
+    text-align: center;
+}
+
+#home p {
+    font-size: 1rem;
+}
+
+/* Services section */
+
+.boxes {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#services {
+    height:max-content;
+}
+
+.service {
+    width: 252px;
+}
+
+/* Client section */
+
+.logos {
+    flex-wrap: wrap;
+}
+
+.clients {
+    height: 820px;
+}
+
+.contact::before {
+    height: 80%;
+}
+
+.clients {
+    margin-top: 125px;
+    height: max-content;
+}
+
+/* Resizing the logos */
+
+#Google {
+    height: 80px;
+    width: 80px;
+}
+
+#Facebook {
+    height: 80px;
+    width: 80px;
+}
+
+#Skype {
+    height: 80px;
+    width: 80px;
+}
+
+#WhatsApp {
+    height: 80px;
+    width: 80px;
+}
+
+/* Contact section */
+
+.contact::before {
+    height: 620px;
+}
+
+.sub {
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+}
+
+.footer {
+    font-size: small;
+}

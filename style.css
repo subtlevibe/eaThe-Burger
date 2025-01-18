@@ -1,0 +1,338 @@
+/* Utilities/Def var */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font: "Playfair Display", serif;
+    --subhead: 2.2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    z-index: -1;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+
+.logo {
+    margin: 0px 7px
+}
+
+#navbar img{
+    height: 70px;
+    margin: 5px 5px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin-left: 50px;
+}
+
+#navbar ul li {
+    padding-right: 80px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(172, 172, 172);
+    font-family: var(--font);
+    font-weight: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 2px solid transparent;
+    transition: all 0.1s ease;
+}
+
+#navbar ul li  a:hover {
+    border: 2px solid rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+    border-radius: 10px;
+    background-color: rgb(95, 95, 95);
+}
+
+/* Home section  */
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../Burger/images/Bg_main.jpg') no-repeat center center/cover;
+    height: 600px;
+    width: 100%;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    opacity: 74%;
+}
+
+#home {
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 23px 30px;
+    color: black;
+    justify-content: center;
+    height: 468px;
+    z-index: -2;
+}
+
+#home h1 {
+    font-size: 3.3rem;
+    position: relative;
+    bottom: 77px;
+}
+
+#home p {
+    font-family: cursive;
+    position: relative;
+    top: 16px;
+    font-size: 1.07rem;
+    text-align: center;
+}
+
+.btn {
+    font-family: "Inter", serif;
+    position: relative;
+    top: 100px;
+    background-color: red;
+    width: 10%;
+    height: 10%;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 1.2rem;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.1s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Services section */
+
+.services {
+    flex-direction: column;
+    height: 565px;
+}
+
+.service {
+    width: 30%;
+    height: 90%;
+    border: 2px solid red;
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgb(197, 251, 251);
+    /* box-shadow: 3px 3px yellow; */
+    transition: all 0.3s ease;
+}
+
+.boxes {
+    position: relative;
+    top: 84px;
+    display: flex;
+}
+
+#box2 img{
+    width: 205px;
+    height: 152px;
+}
+
+#box3 img {
+    width: 205px;
+    height: 152px;
+}
+
+.service h2 {
+    padding: 13px;
+}
+
+.service img {
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px yellow;
+}
+
+.service:hover{
+    box-shadow: 3px 3px yellow;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.services h1 {
+    text-align: center;
+    position: relative;
+    top: 46px;
+    font-size: var(--subhead);
+}
+
+/* Client Section  */
+
+.clients h1{
+    text-align: center;
+    font-family: var(--font);
+    font-size: var(--subhead);
+    line-height: 4em;
+}
+
+.clients {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.clients::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url('../Burger/images/Bg_client.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+}
+
+#Google {
+    width: 270px;
+    height: 270px;
+}
+
+#WhatsApp {
+    width: 250px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.logos img {
+    padding: 32px;
+}
+
+#navbar img:hover {
+    cursor: pointer;
+}
+
+/* Contact section */
+
+.contact {
+    height: 600px;
+    width: 100%;
+}
+
+.contact::before {
+    content: "";
+    background: url('../Burger/images/ContactBG.jpg') no-repeat center center/cover;
+    z-index: -1;
+    position: absolute;
+    height: 693px;
+    width: 100%;
+    opacity: 43%;
+}
+
+.contact h1{
+    text-align: center;
+    font-family: var(--font);
+    font-size: var(--subhead);
+    line-height: 4em;
+}
+
+.forminc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 23px;
+    font-family: cursive;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.forminc input, textarea {
+    height: 25px;
+    width: 75%;
+    font-family: var(--font);
+    font-weight: normal;
+    padding-left: 8px;
+    font-size: 0.9rem;
+
+    /* Styling */
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 8px;
+    background-color: rgb(235, 255, 121);
+}
+
+.forminc textarea {
+    height: 145px;
+}
+
+.contact_info {
+    margin-top: 52px;
+}
+
+.sub {
+    margin-left: 180px;
+    background-color: red;
+    font-family: var(--font);
+    font-weight: normal;
+    font-size: 0.9rem;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    color: yellow;
+    transition: all 0.3s ease;
+}
+
+.sub:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid blue;
+}
+
+/* Footer */
+
+.footer {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 90px;
+}
